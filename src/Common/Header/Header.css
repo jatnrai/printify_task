@@ -1,0 +1,36 @@
+.offcanvas {
+  background-color: #343a40;
+  color: white;
+  width: 70vw; 
+}
+
+.offcanvas .nav-link {
+  color: #1e1e1e;
+}
+
+.offcanvas .nav-link:hover {
+  background-color: #fff9f9;
+  color: #000;
+}
+
+.offcanvas .offcanvas-title {
+  color: #1e1e1e;
+}
+
+.dropdown-menu.show {
+  border: none !important;
+}
+
+@media (max-width: 991px) {
+  .offcanvas {
+    width: 75vw !important;
+  }
+  .ProfileBTNs{
+    display: none;
+  }
+  .ProfileBTN{
+        position: absolute;
+        bottom: 30px;
+        display: flex;  }
+  
+}

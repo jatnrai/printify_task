@@ -1,8 +1,25 @@
+import Header from "./Common/Header/Header";
+import FeaturesSection from "./Components/HomePage/Features";
+import HomePage from "./Components/HomePage/HomePage";
+import Objective from "./Components/HomePage/Objective";
+import PricingSection from "./Components/HomePage/Pricing";
+import ProductSection from "./Components/HomePage/ProductDiscription";
+import ReviewSection from "./Components/HomePage/Review";
+import StoreConnectionSection from "./Components/HomePage/StoreConnection";
 
 function App() {
   return (
 <>
-  <h1 className="">Hello there?</h1>
+<Header />
+<div className="container mx-auto mb-20">
+<HomePage />
+<FeaturesSection />
+<ProductSection />
+<Objective />
+<StoreConnectionSection />
+<ReviewSection />
+<PricingSection />
+</div>
 </>
   );
 }
