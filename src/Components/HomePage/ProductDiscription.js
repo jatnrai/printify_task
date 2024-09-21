@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer';
 const ProductSection = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.9,
+    threshold: 0.7,
   });
 
   const cardVariants = {
@@ -19,17 +19,17 @@ const ProductSection = () => {
   };
 
   return (
-    <section className="overflow-hidden bg-gray-100 p-5 max-w-[100vw]" ref={ref}>
+    <section className="overflow-hidden bg-orange-200 p-5 max-w-[100vw]" ref={ref}>
       <div className="relative flex flex-col lg:flex-row items-center justify-start py-20 max-w-6xl mx-auto">
 
         <motion.div className="lg:w-2/5 w-full z-10">
-          <div className="bg-green-500 lg:h-[40rem] h-[20rem] lg:rounded-3xl">
+          <div className="bg-orange-500 lg:h-[40rem] h-[20rem] lg:rounded-3xl rounded-t-xl">
             <img src="https://printify.com/pfh/media/clothes-CMPWJ6JG.webp" alt="Products Images" className="w-full h-full object-cover" />
           </div>
         </motion.div>
 
         <motion.div
-          className="relative lg:absolute lg:bottom-12 lg:right-0 bg-white w-full lg:rounded-2xl lg:my-8 text-center p-5 md:text-left lg:pt-[5%] lg:pe-[7%] lg:pb-[12.8%] lg:ps-[50%]"
+          className="relative lg:absolute lg:bottom-12 lg:right-0 bg-white w-full lg:rounded-2xl rounded-b-xl lg:my-8 text-center p-5 md:text-left lg:pt-[5%] lg:pe-[7%] lg:pb-[12.8%] lg:ps-[50%]"
           variants={cardVariants}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
@@ -43,7 +43,7 @@ const ProductSection = () => {
             <p className="text-gray-600 mb-6">
               With our free design tools, you can easily add your custom designs to t-shirts, mugs, phone cases, and hundreds of other products.
             </p>
-            <a href="#" className="text-green-500 hover:underline">All products →</a>
+            <a href="#" className="text-orange-500 hover:underline">All products →</a>
           </motion.div>
         </motion.div>
 

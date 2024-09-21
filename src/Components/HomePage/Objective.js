@@ -47,7 +47,7 @@ const Objective = () => {
   ];
 
   return (
-    <section className="bg-white py-12" ref={ref}>
+    <section className="bg-orange-100 py-12" ref={ref}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Carousel for small devices */}
         <div className="sm:hidden">
@@ -58,15 +58,15 @@ const Objective = () => {
           >
             {features.map((feature, index) => (
               <SwiperSlide key={index}>
-                <motion.div variants={cardVariants} className="text-start">
-                  <div className="flex justify-start">
+                <motion.div variants={cardVariants} className="text-center">
+                  <div className="flex justify-center">
                     <img
                       src={feature.image}
                       alt={feature.title}
                       className="h-16 w-16 mb-4"
                     />
                   </div>
-                  <h3 className="text-xl text-start mb-0 font-semibold text-green-600">
+                  <h3 className="text-xl text-center mb-0 font-semibold text-orange-600">
                     {feature.title}
                   </h3>
                   <h3 className="text-xl font-semibold">{feature.subtitle}</h3>
@@ -94,7 +94,7 @@ const Objective = () => {
                   className="h-16 w-16 mb-4"
                 />
               </div>
-              <h3 className="text-xl text-start mb-0 font-semibold text-green-600">
+              <h3 className="text-xl text-start mb-0 font-semibold text-orange-600">
                 {feature.title}
               </h3>
               <h3 className="text-xl font-semibold">{feature.subtitle}</h3>

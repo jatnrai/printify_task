@@ -13,7 +13,7 @@ const Navbar = () => {
       <nav className="container mx-auto flex justify-between items-center p-4 max-w-6xl">
         {/* Logo */}
         <div className="flex items-center space-x-4">
-          <img src="https://printify.com/pfh/media/logo-old-B5JY5YNQ.svg" alt="Logo" className="h-8" />
+          <img src="https://diploy.in/wp-content/uploads/2023/10/diploy-logo-dark-copy.png" alt="Logo" className="h-8" />
         </div>
 
         {/* Desktop Menu */}
@@ -70,7 +70,7 @@ const Navbar = () => {
           <button className="px-4 py-2 border border-gray-300 rounded hover:bg-gray-100">
             Log in
           </button>
-          <button className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600">
+          <button className="px-4 py-2 bg-orange-500 text-white rounded hover:bg-orange-600">
             Sign up
           </button>
         </div>
@@ -144,7 +144,7 @@ const Navbar = () => {
             <button className="block w-full px-4 py-2 border border-gray-300 rounded hover:bg-gray-100">
               Log in
             </button>
-            <button className="block w-full px-4 py-2 mt-4 bg-green-500 text-white rounded hover:bg-green-600">
+            <button className="block w-full px-4 py-2 mt-4 bg-orange-500 text-white rounded hover:bg-orange-600">
               Sign up
             </button>
           </div>

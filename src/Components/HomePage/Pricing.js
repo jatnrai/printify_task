@@ -53,7 +53,7 @@ const PricingSection = () => {
           transition={{ duration: 1.2, delay: 1 }}
           className="w-full lg:w-1/2"
         >
-          <h2 className="text-3xl font-bold mb-4">Make Money, Risk-Free</h2>
+          <h2 className="text-3xl font-bold mb-4">Make <span className='text-orange-400'>Money</span>, Risk-Free</h2>
           <p className="mb-6">You pay for fulfillment only when you make a sale.</p>
 
           {/* Profit Calculation */}
@@ -67,7 +67,7 @@ const PricingSection = () => {
               <span>$12</span>
             </div>
             <div className="border-t border-gray-500 my-2"></div>
-            <div className="flex justify-between text-green-400 font-bold">
+            <div className="flex justify-between text-orange-400 font-bold">
               <span>Your profit</span>
               <span>$18</span>
             </div>
@@ -75,7 +75,7 @@ const PricingSection = () => {
 
           <motion.button
             whileHover={{ scale: 1.05 }}
-            className="bg-green-500 text-white px-6 py-2 rounded-lg hover:bg-green-600 transition-colors"
+            className="bg-orange-500 text-white px-6 py-2 rounded-lg hover:bg-orange-600 transition-colors"
           >
             Start Selling
           </motion.button>

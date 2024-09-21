@@ -13,17 +13,17 @@ const HomePage = () => {
               </h1>
               <ul className="text-lg text-gray-700 mb-8 space-y-3">
                 <li className="flex items-center">
-                  <span className="text-green-500 mr-2">✔</span> 100% Free to use
+                  <span className="text-orange-500 mr-2">✔</span> 100% Free to use
                 </li>
                 <li className="flex items-center">
-                  <span className="text-green-500 mr-2">✔</span> 900+ High-Quality Products
+                  <span className="text-orange-500 mr-2">✔</span> 900+ High-Quality Products
                 </li>
                 <li className="flex items-center">
-                  <span className="text-green-500 mr-2">✔</span> Largest global print network
+                  <span className="text-orange-500 mr-2">✔</span> Largest global print network
                 </li>
               </ul>
               <div className="flex flex-col sm:flex-row sm:space-x-4">
-                <button className="bg-green-500 text-white px-6 py-3 rounded-lg font-medium text-lg hover:bg-green-600">
+                <button className="bg-orange-500 text-white px-6 py-3 rounded-lg font-medium text-lg hover:bg-orange-600">
                   Start for free
                 </button>
                 <button className="mt-4 sm:mt-0 flex items-center justify-center px-6 py-3 text-lg border border-gray-300 rounded-lg hover:bg-gray-100">

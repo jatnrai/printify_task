@@ -87,7 +87,7 @@ const TestimonialsCarousel = () => {
   );
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-orange-100">
     <div className="max-w-6xl mx-auto">
 
       {/* Section Heading */}
@@ -142,7 +142,7 @@ const TestimonialsCarousel = () => {
       <img src={testimonial.img} alt={testimonial.name} className="w-16 h-16 rounded-full mr-4" />
       <div>
         <h3 className="font-bold text-lg">{testimonial.name}</h3>
-        <p className="text-green-600">{testimonial.role}</p>
+        <p className="text-orange-600">{testimonial.role}</p>
         <div className="flex mt-2">
           {renderStars(testimonial.rating)}
         </div>

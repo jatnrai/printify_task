@@ -59,7 +59,7 @@ const StoreConnectionSection = () => {
 
         {/* Central Icon */}
         <motion.div
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-green-500 text-white shadow-lg rounded-full p-6 h-28 w-28 flex items-center justify-center"
+          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-orange-500 text-white shadow-lg rounded-full p-6 h-28 w-28 flex items-center justify-center"
           whileHover={{ scale: 1.2 }}
           variants={scaleUp}
           initial="hidden"
