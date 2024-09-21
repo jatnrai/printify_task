@@ -9,9 +9,9 @@ const FeaturesSection = () => {
           <div className="text-center">
             <div className="flex justify-center">
               <img
-                src="path/to/your-icon1.png"
+                src="	https://printify.com/pfh/assets/legacy/higher-profits.svg"
                 alt="Higher Profits"
-                className="h-16 w-16 mb-4"
+                className="h-20 w-20 mb-4"
               />
             </div>
             <h3 className="text-xl font-semibold">Higher Profits</h3>
@@ -24,9 +24,9 @@ const FeaturesSection = () => {
           <div className="text-center">
             <div className="flex justify-center">
               <img
-                src="path/to/your-icon2.png"
+                src="https://printify.com/pfh/assets/legacy/robust-scaling.svg"
                 alt="Robust Scaling"
-                className="h-16 w-16 mb-4"
+                className="h-20 w-20 mb-4"
               />
             </div>
             <h3 className="text-xl font-semibold">Robust Scaling</h3>
@@ -39,9 +39,9 @@ const FeaturesSection = () => {
           <div className="text-center">
             <div className="flex justify-center">
               <img
-                src="path/to/your-icon3.png"
+                src="https://printify.com/pfh/assets/legacy/best-selection.svg"
                 alt="Best Selection"
-                className="h-16 w-16 mb-4"
+                className="h-20 w-20 mb-4"
               />
             </div>
             <h3 className="text-xl font-semibold">Best Selection</h3>
