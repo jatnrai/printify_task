@@ -11,12 +11,12 @@ function App() {
   return (
 <>
 <Header />
-<div className="container mx-auto mb-20">
+<div className=" mx-auto mb-20">
 <HomePage />
 <FeaturesSection />
 <ProductSection />
 <Objective />
-<StoreConnectionSection />
+{/* <StoreConnectionSection /> */}
 <ReviewSection />
 <PricingSection />
 </div>

@@ -8,7 +8,7 @@ const HomePage = () => {
             
             {/* Left Section */}
             <div className="w-full md:w-1/2 mb-8 md:mb-0 lg:min-h-[75vh] flex flex-col justify-center">
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              <h1 className=" text-3xl sm:text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
                 Create and sell custom products
               </h1>
               <ul className="text-lg text-gray-700 mb-8 space-y-3">
@@ -35,7 +35,6 @@ const HomePage = () => {
               </p>
             </div>
     
-            {/* Right Section (Image) */}
             <div className="w-full md:w-1/2 flex justify-center lg:justify-end">
               <img 
                 src="https://via.placeholder.com/300" 

@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false); // Mobile menu
-  const [activeDropdown, setActiveDropdown] = useState(null); // Track which dropdown is open
+  const [isOpen, setIsOpen] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState(null); 
 
   const toggleDropdown = (index) => {
     setActiveDropdown(activeDropdown === index ? null : index);
   };
 
   return (
-    <header className="bg-white border-b shadow-md">
-      <nav className="container mx-auto flex justify-between items-center p-4">
+    <header className="bg-white border-b shadow-md sticky top-0 z-50 " >
+      <nav className="container mx-auto flex justify-between items-center p-4 max-w-6xl">
         {/* Logo */}
         <div className="flex items-center space-x-4">
           <img src="https://printify.com/pfh/media/logo-old-B5JY5YNQ.svg" alt="Logo" className="h-8" />

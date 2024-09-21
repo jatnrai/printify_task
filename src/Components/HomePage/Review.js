@@ -13,17 +13,17 @@ const TestimonialsCarousel = () => {
   const slideControls = useAnimation();
 
   const { ref, inView } = useInView({
-    threshold: 0.2,
+    threshold: .7,
     triggerOnce: true, 
   });
 
   useEffect(() => {
     if (inView) {
-      controls.start({ opacity: 1, y: 0, transition: { duration: 1.5 } });
+      controls.start({ opacity: 1, y: 0, transition: { duration: 1 } });
       slideControls.start(i => ({
         opacity: 1,
         y: 0,
-        transition: { duration: 1, delay: i * 0.5 }
+        transition: { duration: 1.2, delay: i * 0.5 }
       }));
     }
   }, [controls, slideControls, inView]);
@@ -88,6 +88,8 @@ const TestimonialsCarousel = () => {
 
   return (
     <section className="py-20 bg-gray-50">
+    <div className="max-w-6xl mx-auto">
+
       {/* Section Heading */}
       <div ref={ref} className="text-center mb-10">
         <motion.h2
@@ -107,7 +109,6 @@ const TestimonialsCarousel = () => {
         </motion.p>
       </div>
 
-      {/* Testimonials Carousel */}
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
@@ -127,27 +128,32 @@ const TestimonialsCarousel = () => {
       >
         {testimonials.map((testimonial, index) => (
           <SwiperSlide key={index}>
-            <motion.div
-              className="p-6 bg-white rounded-lg shadow-lg max-w-md mx-auto"
-              initial={{ opacity: 0, y: 120}}
-              animate={slideControls} 
-              custom={index}
-            >
-              <div className="flex items-center mb-4">
-                <img src={testimonial.img} alt={testimonial.name} className="w-16 h-16 rounded-full mr-4" />
-                <div>
-                  <h3 className="font-bold text-lg">{testimonial.name}</h3>
-                  <p className="text-green-600">{testimonial.role}</p>
-                  <div className="flex mt-2">
-                    {renderStars(testimonial.rating)}
-                  </div>
-                </div>
-              </div>
-              <p className="text-gray-600">{testimonial.testimonial}</p>
-            </motion.div>
-          </SwiperSlide>
+  <motion.div
+    className="p-6 bg-white rounded-lg shadow-lg max-w-md mx-auto"
+    initial={{ opacity: 0, y: 120}}
+    animate={slideControls} 
+    custom={index}
+    transition={{
+      duration: 1.2,
+      delay: index * 0.3
+    }}
+  >
+    <div className="flex items-center mb-4">
+      <img src={testimonial.img} alt={testimonial.name} className="w-16 h-16 rounded-full mr-4" />
+      <div>
+        <h3 className="font-bold text-lg">{testimonial.name}</h3>
+        <p className="text-green-600">{testimonial.role}</p>
+        <div className="flex mt-2">
+          {renderStars(testimonial.rating)}
+        </div>
+      </div>
+    </div>
+    <p className="text-gray-600">{testimonial.testimonial}</p>
+  </motion.div>
+</SwiperSlide>
         ))}
       </Swiper>
+    </div>
     </section>
   );
 };
