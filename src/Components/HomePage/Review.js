@@ -91,7 +91,7 @@ const TestimonialsCarousel = () => {
     <div className="max-w-6xl mx-auto">
 
       {/* Section Heading */}
-      <div ref={ref} className="text-center mb-10">
+      <div ref={ref} className="text-center mb-10 m-4">
         <motion.h2
           className="text-3xl font-bold"
           initial={{ opacity: 0, y: -20 }}
