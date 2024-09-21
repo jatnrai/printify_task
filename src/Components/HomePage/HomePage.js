@@ -7,6 +7,7 @@ import PricingSection from "./Pricing";
 import ProductSection from "./ProductDiscription";
 import ReviewSection from "./Review";
 import StoreConnectionSection from "./StoreConnection";
+import Footer from '../../Common/Footer/Footer';
 
 export default function HomePage() {
   return (
@@ -21,6 +22,7 @@ export default function HomePage() {
 <ReviewSection />
 <PricingSection />
 </div>
+<Footer />
 </>
   )
 }
