@@ -124,12 +124,12 @@ const TestimonialsCarousel = () => {
           },
         }}
         modules={[Pagination, Navigation]}
-        className="max-w-6xl mx-auto"
+        className="max-w-6xl md:mx-auto mx-2"
       >
         {testimonials.map((testimonial, index) => (
           <SwiperSlide key={index}>
   <motion.div
-    className="p-6 bg-white rounded-lg shadow-lg max-w-md mx-auto"
+    className="p-6 bg-white rounded-xl shadow-lg max-w-md mx-auto"
     initial={{ opacity: 0, y: 120}}
     animate={slideControls} 
     custom={index}
